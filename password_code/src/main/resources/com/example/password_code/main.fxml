@@ -5,25 +5,52 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
 
+
+<?import javafx.scene.control.TextField?>
 <VBox xmlns:fx="http://javafx.com/fxml"
       xmlns="http://javafx.com/javafx"
       fx:controller="com.example.password_code.Controller"
-      spacing="10"
-      alignment="CENTER">
+      spacing="12"
+      alignment="CENTER"
+      style="-fx-background-color: #f4f4f4; -fx-padding: 20;">
 
-    <Label text="Password Security Analyzer"/>
+    <Label text="Password Analyzer"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
 
-    <PasswordField fx:id="passwordField"
-                   promptText="Passwort eingeben"/>
+    <HBox spacing="5" alignment="CENTER">
 
-    <Button text="Prüfen"
-            onAction="#checkPassword"/>
+        <PasswordField fx:id="passwordField"
+                       promptText="Enter password"
+                       prefWidth="210"/>
+
+        <TextField fx:id="textField"
+                   promptText="Enter password"
+                   prefWidth="210"
+                   visible="false"
+                   managed="false"/>
+
+        <Button fx:id="toggleButton"
+                text="👁"
+                onAction="#togglePassword"
+                prefWidth="40"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Check"
+            onAction="#checkPassword"
+            prefWidth="120"/>
+        <Button text="Generate"
+                onAction="#generatePassword"
+                prefWidth="120"/>
+    </HBox>
 
     <ProgressBar fx:id="strengthBar"
+                 prefWidth="250"
                  progress="0"/>
 
     <Label fx:id="resultLabel"
-           text="Noch keine Prüfung"/>
+           text="" />
 
 </VBox>

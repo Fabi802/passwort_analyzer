@@ -13,11 +13,11 @@ public class CommonPasswordChecker implements passwordRule {
             "george", "summer", "tigger", "cookie", "maggie", "ginger", "corvette", "batman", "internet",
             "michelle1", "test123", "asdfgh", "zxcvbnm", "987654321", "7777777", "888888",
             "999999", "112233", "159753", "147258369", "121212", "qwertyuiop", "1qaz2wsx", "696969", "987654", "hunter", "thomas", "jennifer", "andrew", "martin", "daniel",
-            "matrix", "monkey123", "liverpool", "arsenal", "chelsea", "spiderman"
+            "matrix", "monkey123", "liverpool", "arsenal", "chelsea", "spiderman", "christian"
     );
 
     @Override
     public boolean checkPassword(String password) {
-        return !passwordSet.contains(password.toLowerCase()) || !password.contains(password.toUpperCase());
+        return !passwordSet.contains(password.toLowerCase());
     }
 }
