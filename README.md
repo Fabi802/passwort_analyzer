@@ -11,7 +11,7 @@ Features:
 - Detection of common weak passwords
 
 
-![start](https://raw.githubusercontent.com/Fabi802/password_analyzer/main/screenshots/start.png)
+![analyze](https://raw.githubusercontent.com/Fabi802/password_analyzer/main/screenshots/analyze.png)
 ![generate](https://raw.githubusercontent.com/Fabi802/password_analyzer/main/screenshots/generate.png)
 
 Technologies Used:
