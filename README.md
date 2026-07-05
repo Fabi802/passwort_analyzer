@@ -9,13 +9,15 @@ Features:
 - Visual strength indicator (ProgressBar)
 - Instant feedback on password quality
 - Detection of common weak passwords
+- Dark Mode
 
 
 ![analyze](https://raw.githubusercontent.com/Fabi802/password_analyzer/main/screenshots/analyze.png)
 ![generate](https://raw.githubusercontent.com/Fabi802/password_analyzer/main/screenshots/generate.png)
+![darkmode](https://raw.githubusercontent.com/Fabi802/password_analyzer/main/screenshots/darkmode.png)
 
 Technologies Used:
 - Java 21+
 - JavaFX
-- FXML for UI design
+- FXML and css for UI design
 - SecureRandom for password generation
