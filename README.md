@@ -19,5 +19,5 @@ Features:
 Technologies Used:
 - Java 21+
 - JavaFX
-- FXML and css for UI design
+- FXML and CSS for UI design
 - SecureRandom for password generation
