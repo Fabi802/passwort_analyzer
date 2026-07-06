@@ -21,3 +21,7 @@ Technologies Used:
 - JavaFX
 - FXML and CSS for UI design
 - SecureRandom for password generation
+
+
+Things I want to add:
+- better checker
